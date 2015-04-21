@@ -1,0 +1,21 @@
+name:                hurl
+version:             1.0.0.0
+synopsis:            Hurl -- Curl's little brother in Haskell
+description:         This is an example application showing how to use the http-encodings package.
+license:             BSD3
+license-file:        LICENSE
+author:              Andrey Chudnov
+maintainer:          oss@chudnov.com
+copyright:           Stevens Institute of Technology 2013-2015
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable hurl
+  Main-Is: Hurl.hs
+  build-depends: base == 4.*
+               , cmdargs >= 0.9 && < 1.0
+               , http-encodings
+               , HTTP        == 4000.*
+               , bytestring  == 0.9.*
+               , network     >= 2.4.0.1 && < 2.5.0.0
